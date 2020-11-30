@@ -451,7 +451,7 @@ button {
 
 .header__container {
   position: relative;
-  padding-bottom: 240px;
+  padding-bottom: 220px;
 }
 
 .header__bg {
@@ -494,12 +494,16 @@ button {
 .header-top__phone {
   font-size: 30px;
   margin-bottom: 8px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-top__email {
   font-family: EXO;
   font-size: 16px;
   border-bottom: 2px solid #82bb5d;
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-top__call-btn {
@@ -520,6 +524,8 @@ button {
   margin-right: 15px;
   background-color: #82bb5d;
   padding: 7px 6px 8px 9px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 7px rgba(130, 187, 93, 0.5);
           box-shadow: 0 0 0 7px rgba(130, 187, 93, 0.5);
@@ -537,8 +543,9 @@ button {
 
 .header-content__slider {
   width: 1140px;
-  padding-left: 100px;
+  padding-bottom: 16px;
   position: relative;
+  overflow: hidden;
 }
 
 .header-content__slider-title {
@@ -565,6 +572,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 100px;
 }
 
 .header-content__arrow {
@@ -574,19 +582,21 @@ button {
   background-position: 50% 50%;
   border: 1px solid #82bb5d;
   position: absolute;
-  top: 50%;
+  top: 53%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
 }
 
 .header-content__arrow--prev {
   background-image: url("../img/arrow-right.png");
-  right: 0;
+  right: 20px;
 }
 
 .header-content__arrow--next {
   background-image: url("../img/arrow-left.png");
-  left: 0;
+  left: 20px;
 }
 
 .header-content__text-wrapper {
@@ -603,7 +613,7 @@ button {
           justify-content: space-between;
   font-family: EXO;
   font-size: 16px;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 .header-content__features-text {
