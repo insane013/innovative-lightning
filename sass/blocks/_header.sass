@@ -1,9 +1,17 @@
 .header
-  background-image: url("../img/header-bg.png")
+  position: relative
+  background: url("../img/header-bg3.png")
   background-repeat: no-repeat
   background-size: cover
+  background-position: top center
+  &__container
+    position: relative
+    padding-bottom: 240px
+  &__bg
+    position: absolute
+    bottom: 0
+    left: -150px
   &-top
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)
     &__container
       display: flex
     &__content-wrapper
@@ -47,6 +55,7 @@
     &__slider
       width: 1140px
       padding-left: 100px
+      position: relative
       &-title
         font-family: T-FLEXA
         font-size: 44px
@@ -56,9 +65,29 @@
       &-text
         &--big
           font-size: 86px
+    &__slide
+      display: flex
+      align-items: center
+    &__arrow
+      width: 48px
+      height: 48px
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      border: 1px solid $primary
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      &--prev
+        background-image: url("../img/arrow-right.png")
+        right: 0
+      &--next
+        background-image: url("../img/arrow-left.png")
+        left: 0
+
     &__text
       &-wrapper
         max-width: 560px
+        margin-right: 138px
     &__features
       display: flex
       justify-content: space-between
@@ -81,6 +110,35 @@
         &:last-child
           &::after
             display: none
+    &__video
+      display: flex
+      justify-content: start
+      align-items: flex-start
+      &-ico
+        padding: 20px 23px 20px 25px
+        width: 64px
+        height: 64px
+        margin-top: 38px
+        box-shadow: 0 0 0 15px  rgba($primary, 0.5 )
+        position: relative
+        &::before
+          content: ""
+          display: block
+          background-color: transparent
+          position: absolute
+          width: 124px
+          height: 124px
+          border-radius: 50%
+          border: 2px solid rgba($primary, 0.5 )
+        img
+          width: 15px
+          height: 24px
+      &-text
+        font-family: Myriad
+        color: $light
+        text-wrap: wrap
+        margin-left: 30px
+        max-width: 120px
 
 .menu
   &__list
@@ -96,6 +154,25 @@
     text-transform: uppercase
     &:last-child
       margin-right: 0
+  &__link
+    text-decoration: none
+    color: inherit
+    &--02, &--03, &--04
+      position: relative
+      &::before
+        content: "02"
+        font-family: T-FLEXA
+        font-size: 12px
+        position: absolute
+        color: rgba(255, 255, 255, 0.2)
+        left: 50%
+        top: -15px
+    &--03::before
+      content: "03"
+      left: 10px
+    &--04::before
+      content: "04"
+      left: -10px
 
 .logo
   width: 57px
