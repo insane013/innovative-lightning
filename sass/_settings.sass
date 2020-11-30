@@ -1,0 +1,35 @@
+*, *::after, *::before
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+  color: $light
+  font-family: T-FLEXA, sans-serif
+
+img
+  max-width: 100%
+
+.container
+  max-width: 1140px
+  margin: 0 auto
+
+.see-more
+  background-color: transparent
+  border: none
+  color: $primary
+  font-family: EXO
+  padding: 0
+  display: flex
+  align-items: center
+  cursor: pointer
+  &__text
+    margin-right: 15px
+    border-bottom: 2px solid $primary
+  &__ico
+    background-color: $primary
+    padding: 10px 11px 10px 12px
+    border-radius: 50%
+    width: 32px
+    height: 32px
+    box-shadow: 0 0 0 7px  rgba($primary, 0.5 )

@@ -1,0 +1,107 @@
+.header
+  background-image: url("../img/header-bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  &-top
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)
+    &__container
+      display: flex
+    &__content-wrapper
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      width: 100%
+      padding-left: 75px
+      padding-top: 75px
+    &__contacts
+      display: flex
+      flex-direction: column
+    &__phone
+      font-size: 30px
+      margin-bottom: 8px
+    &__email
+      font-family: EXO
+      font-size: 16px
+      border-bottom: 2px solid $primary
+    &__call
+      &-btn
+        background: transparent
+        border: none
+        display: flex
+        align-items: flex-start
+        padding: 0
+        margin: 0
+        text-decoration: none
+      &-ico
+        margin-right: 15px
+        background-color: $primary
+        padding: 7px 6px 8px 9px
+        border-radius: 50%
+        box-shadow: 0 0 0 7px  rgba($primary, 0.5 )
+      &-text
+        font-family: EXO
+        color: $light
+        border-bottom: 2px solid $primary
+  &-content
+    padding-top: 48px
+    &__slider
+      width: 1140px
+      padding-left: 100px
+      &-title
+        font-family: T-FLEXA
+        font-size: 44px
+        display: flex
+        flex-direction: column
+        margin-bottom: 21px
+      &-text
+        &--big
+          font-size: 86px
+    &__text
+      &-wrapper
+        max-width: 560px
+    &__features
+      display: flex
+      justify-content: space-between
+      font-family: EXO
+      font-size: 16px
+      margin-bottom: 36px
+      &-text
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &::after
+          content: ""
+          display: flex
+          width: 7px
+          height: 8px
+          margin-left: 10px
+          background-color: $primary
+          transform: rotate(45deg)
+          box-shadow: 0 0 8px 7px  rgba($primary, 0.5 )
+        &:last-child
+          &::after
+            display: none
+
+.menu
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    justify-content: space-between
+    font-family: T-FLEXA
+  &__item
+    margin-right: 54px
+    font-size: 16px
+    text-transform: uppercase
+    &:last-child
+      margin-right: 0
+
+.logo
+  width: 57px
+  &-wrapper
+    border-top: 8px solid $primary
+    width: 105px
+    display: flex
+    justify-content: center
+    padding-top: 26px
