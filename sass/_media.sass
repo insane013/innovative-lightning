@@ -1,6 +1,6 @@
 @media (max-width: 1500px)
   .header
-    &__bg
+    &__lt
       left: -25px
 
 @media (max-width: 1200px)
@@ -185,19 +185,21 @@
     margin: 0
     padding: 0
     padding-left: 12px
-    display: none
+    height: 0
+    overflow: hidden
     visibility: hidden
-    position: absolute
-    top: -100px
     transition-property: all
     transition-duration: 1s
     &--show
-      display: block
-      top: 0
       visibility: visible
-      position: static
+      height: 150px
+      .dropdown-content__item
+        opacity: 1
     &__item
       margin-bottom: 19px
+      opacity: 0
+      transition-property: all
+      transition-duration: 1.5s
       &:first-child
         margin-top: 19px
       &:last-child

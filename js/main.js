@@ -18,6 +18,7 @@ $(document).ready(function () {
     $($(this).attr("data-href")).toggleClass("menu--mobile--visible")
     $(this).toggleClass("menu-btn--header--menu-open")
   });
+  
   $("[data-interact='close-menu']").on('click', function(e){
     e.preventDefault,
     $($(this).attr("data-href")).removeClass("menu--mobile--visible")

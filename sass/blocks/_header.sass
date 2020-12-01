@@ -1,16 +1,23 @@
 .header
   position: relative
-  background: url("../img/header-bg3.png")
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center top
+  &-main
+    position: relative
   &__container
     position: relative
     padding-bottom: 220px
-  &__bg
+  &__lt
     position: absolute
     bottom: 0
     left: -150px
+  &__bg
+    position: absolute
+    object-fit: cover
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
   &-top
     &__container
       display: flex
@@ -203,3 +210,120 @@
     padding-top: 26px
   &-mobile-wrapper
     display: none
+
+.our-description
+  background-color: #fff
+  &__bg
+    object-fit: cover
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 2
+  &__dark
+    // background-image: url("../img/clip-bg.png")
+    // background-repeat: no-repeat
+    // background-position: center
+    width: 100%
+    min-height: 762px
+    padding-top: 48px
+    position: relative
+  &__container
+    display: flex
+  &__tag
+    writing-mode: vertical-rl
+    transform: rotate(180deg)
+    margin-right: 80px
+    text-align: right
+    font-family: exo
+    color: #222
+    z-index: 3
+  &__title
+    font-size: 40px
+    margin: 0
+    margin-bottom: 60px
+    z-index: 3
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    &-wrapper
+      z-index: 3
+  &__item
+    margin-bottom: 23px
+  &__link
+    font-family: EXO
+    text-decoration: none
+    color: #fff
+    display: flex
+    align-items: center
+    z-index: 3
+  &__ico
+    width: 6px
+    height: 8px
+    z-index: 3
+    &-wrapper
+      width: 25px
+      height: 25px
+      border: 2px solid $primary
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 15px
+      box-shadow: 0 0 10px 3px rgba($primary, 0.4)
+      z-index: 3
+  &__content
+    position: relative
+    margin-top: -530px
+    &-container
+      display: flex
+      flex-direction: column
+  &__we-want
+    margin-left: auto
+    margin-right: 80px
+    margin-bottom: 25px
+  &__text
+    width: 472px
+    line-height: 167%
+    font-size: 18px
+    color: #333333
+    font-family: exo
+    margin: 0
+    margin-bottom: 12px
+  &__lamp-img
+    position: absolute
+    top: -30px
+    left: 23px
+    z-index: 1
+  &__we-offer
+    margin-right: auto
+    display: flex
+    &-menu
+      display: flex
+    &-list
+      color: $primary
+      font-family: exo
+      margin: 0
+      padding: 0
+      padding-left: 17px
+      margin-right: 42px
+    &-item
+      margin-bottom: 9px
+      &--nd
+        color: #333333
+
+    &-title
+      color: $primary
+      font-size: 40px
+      margin: 0
+      margin-bottom: 13px
+    &-text
+      width: 615px
+      margin-bottom: 26px
+  &__grass-img
+    position: absolute
+    bottom: -40px
+    right: -270px
+    z-index: 1
