@@ -13,11 +13,78 @@
         <img class="header__bg" src="img/LIGHT.png" alt="" />
         <div class="header-top">
           <div class="container header-top__container">
+            <div class="menu-btn menu-btn--header" data-interact="toggle-menu" data-href="#mobile-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- /.menu-btn -->
+            <nav class="menu--mobile" id="mobile-menu">
+              <ul class="menu__list--mobile">
+                <li class="menu__item--mobile menu__item--mobile-btn">
+                  <div class="menu-btn menu-btn--empty">
+                  </div>
+                  <!-- /.menu-btn -->
+                  <div class="logo-wrapper logo-wrapper--menu">
+                    <img
+                      src="img/logo.png"
+                      alt="Big Cock Logo"
+                      class="logo logo--menu"
+                    />
+                  </div>
+                  <div class="menu__close-btn" data-interact="close-menu" data-href="#mobile-menu">
+                    <img src="img/close.svg" alt="" />
+                  </div>
+                </li>
+                <li class="menu__item--mobile">
+                  <a class="menu__link--mobile" href="#">Главная</a>
+                </li>
+                <li class="menu__item--mobile">
+                  <a class="menu__link--mobile" href="#">О Компании</a>
+                </li>
+                <li class="menu__item--mobile">
+                  <a class="menu__dropdown menu__link--mobile" href="#">
+                    Продукция
+                    <button class="menu__dropdown-arrow" data-interact="dropdown" data-href="#menu-dropdown-content"></button>
+                  </a>
+                  <ul class="dropdown-content" menu__dropdown-content" id="menu-dropdown-content">
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">FLASHER</a>
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">FIREFLY</a>
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">NEVA</a>
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">SKELETON</a>
+                    </li>
+                  </ul>
+                  <!-- /.menu__dropdown-content -->
+                </li>
+                <li class="menu__item--mobile">
+                  <a class="menu__link--mobile" href="#">Статьи</a>
+                </li>
+                <li class="menu__item--mobile">
+                  <a class="menu__link--mobile" href="#">Контакты</a>
+                </li>
+              </ul>
+              <!-- /.menu__list -->
+            </nav>
+            <!-- /.header-top__menu -->
             <div class="logo-wrapper">
               <img
                 src="img/logo.png"
                 alt="Big Cock Logo"
                 class="logo header__logo"
+              />
+            </div>
+            <div class="logo-mobile-wrapper">
+              <img
+                src="img/logo-mobile.png"
+                alt="Big Cock Logo"
+                class="logo-mobile header__logo-mobile"
               />
             </div>
             <div class="header-top__content-wrapper">
@@ -82,36 +149,36 @@
                         >
                       </div>
                       <!-- /.slider__title -->
-                      <div class="header-content__features">
-                        <span class="header-content__features-text"
-                          >Российский бренд</span
-                        >
-                        <span class="header-content__features-text"
-                          >Конкурентные цены</span
-                        >
-                        <span class="header-content__features-text"
-                          >Собственное производство</span
-                        >
-                      </div>
-                      <!-- /.header-content__slider-features -->
-                      <button class="see-more header-content__see-more">
-                        <span class="see-more__text">СМОТРЕТЬ КАТАЛОГ</span>
-                        <div class="arrow-ico see-more__ico">
-                          <img src="img/arrow-right.png" alt="" />
+                      <button class="header-content__video">
+                        <div class="arrow-ico header-content__video-ico">
+                          <img src="img/arrow-right.svg" alt="" />
                         </div>
+                        <span class="header-content__video-text"
+                          >Смотреть видео о производстве</span
+                        >
                       </button>
-                      <!-- /.see-more header-content__see-more -->
+                      <!-- /.header-content__look-video -->
                     </div>
                     <!-- /.header-content__text-wrapper -->
-                    <button class="header-content__video">
-                      <div class="arrow-ico header-content__video-ico">
-                        <img src="img/arrow-right.png" alt="" />
-                      </div>
-                      <span class="header-content__video-text"
-                        >Смотреть видео о производстве</span
+                    <div class="header-content__features">
+                      <span class="header-content__features-text"
+                        >Российский бренд</span
                       >
+                      <span class="header-content__features-text"
+                        >Конкурентные цены</span
+                      >
+                      <span class="header-content__features-text"
+                        >Собственное производство</span
+                      >
+                    </div>
+                    <!-- /.header-content__slider-features -->
+                    <button class="see-more header-content__see-more">
+                      <span class="see-more__text">СМОТРЕТЬ КАТАЛОГ</span>
+                      <div class="arrow-ico see-more__ico">
+                        <img src="img/arrow-right.svg" alt="" />
+                      </div>
                     </button>
-                    <!-- /.header-content__look-video -->
+                    <!-- /.see-more header-content__see-more -->
                   </div>
                 </div>
                 <!-- /.swiper-slide -->
@@ -131,36 +198,36 @@
                         >
                       </div>
                       <!-- /.slider__title -->
-                      <div class="header-content__features">
-                        <span class="header-content__features-text"
-                          >Российский бренд</span
-                        >
-                        <span class="header-content__features-text"
-                          >Конкурентные цены</span
-                        >
-                        <span class="header-content__features-text"
-                          >Собственное производство</span
-                        >
-                      </div>
-                      <!-- /.header-content__slider-features -->
-                      <button class="see-more header-content__see-more">
-                        <span class="see-more__text">СМОТРЕТЬ КАТАЛОГ</span>
-                        <div class="arrow-ico see-more__ico">
-                          <img src="img/arrow-right.png" alt="" />
+                      <button class="header-content__video">
+                        <div class="arrow-ico header-content__video-ico">
+                          <img src="img/arrow-right.svg" alt="" />
                         </div>
+                        <span class="header-content__video-text"
+                          >Смотреть видео о производстве</span
+                        >
                       </button>
-                      <!-- /.see-more header-content__see-more -->
+                      <!-- /.header-content__look-video -->
                     </div>
                     <!-- /.header-content__text-wrapper -->
-                    <button class="header-content__video">
-                      <div class="arrow-ico header-content__video-ico">
-                        <img src="img/arrow-right.png" alt="" />
-                      </div>
-                      <span class="header-content__video-text"
-                        >Смотреть видео о производстве</span
+                    <div class="header-content__features">
+                      <span class="header-content__features-text"
+                        >Российский бренд</span
                       >
+                      <span class="header-content__features-text"
+                        >Конкурентные цены</span
+                      >
+                      <span class="header-content__features-text"
+                        >Собственное производство</span
+                      >
+                    </div>
+                    <!-- /.header-content__slider-features -->
+                    <button class="see-more header-content__see-more">
+                      <span class="see-more__text">СМОТРЕТЬ КАТАЛОГ</span>
+                      <div class="arrow-ico see-more__ico">
+                        <img src="img/arrow-right.svg" alt="" />
+                      </div>
                     </button>
-                    <!-- /.header-content__look-video -->
+                    <!-- /.see-more header-content__see-more -->
                   </div>
                 </div>
                 <!-- /.swiper-slide -->

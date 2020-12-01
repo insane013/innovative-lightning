@@ -1,1 +1,207 @@
+@media (max-width: 1500px)
+  .header
+    &__bg
+      left: -25px
 
+@media (max-width: 1200px)
+  .container
+    max-width: 950px
+  .header
+    &-content
+      &__slider
+        max-width: 950px
+      &__slide
+        padding: 0
+      &__arrow
+        display: none
+    &-top
+      &__phone
+        font-size: 25px
+  .menu
+    &__item
+      margin-right: 30px
+      font-size: 14px
+
+@media (max-width: 992px)
+  .container
+    max-width: 750px
+  .header
+    &__container
+      padding-bottom: 100px
+    &-content
+      &__slider
+        max-width: 750px
+        &-title
+          margin-right: 84px
+        &-text
+          font-size: 30px
+          &--big
+            font-size: 65px
+      &__video
+        align-items: center
+        align-self: center
+        &-ico
+          margin-top: 0
+          &::before
+            display: none
+      &__text-wrapper
+        justify-content: space-between
+    &-top
+      &__container
+        border-top: 6px solid $primary
+      &__content-wrapper
+        padding-left: 0
+        padding-top: 30px
+        justify-content: flex-end
+        align-items: center
+      &__contacts
+        margin-right: 20px
+  .logo
+    &--menu
+      width: 34px
+      height: 59px
+    &-wrapper
+      display: none
+      &--menu
+        border-top: none
+        width: 34px
+        height: 59px
+        display: flex
+        justify-content: center
+        padding-top: 0
+  .logo-mobile
+    width: 119px
+    height: 49px
+    &-wrapper
+      display: flex
+      padding-top: 30px
+  .menu
+    display: none
+    &-btn
+      display: flex
+      width: 31px
+      height: 31px
+      border: 1px solid $primary
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      background-color: transparent
+      cursor: pointer
+      span
+        background-color: $primary
+        height: 2px
+        width: 14px
+        margin-bottom: 4px
+        &:last-child
+          margin-bottom: 0
+      &--header
+        margin-right: 27px
+        flex-shrink: 0
+        margin-top: 40px
+        z-index: 11
+        &--menu-open
+          background-color: $primary
+          span
+            background-color: $light
+      &--empty
+        border: none
+        visibility: hidden
+
+    &--mobile
+      display: flex
+      padding: 10px
+      padding-top: 0
+      background: url("../img/mobile-menu-bg.png")
+      background-size: cover
+      background-repeat: no-repeat
+      width: 320px
+      position: absolute
+      z-index: 10
+      top: 2px
+      left: -1000px
+      visibility: hidden
+      padding-bottom: 55px
+      transition-property: all
+      transition-duration: 1s
+      &--visible
+        left: -10px
+        visibility: visible
+    &__list--mobile
+      font-family: T-FLEXA
+      font-weight: 400
+      font-size: 16px
+      list-style: none
+      margin: 0
+      padding: 0
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      width: 100%
+    &__item--mobile
+      margin-bottom: 19px
+      padding: 0 15px
+      width: 100%
+      text-transform: uppercase
+      &:last-child
+        margin-bottom: 0
+      &-btn
+        padding: 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-top: 4px solid $primary
+        padding-top: 27px
+        margin-bottom: 26px
+    &__close-btn
+      width: 32px
+      height: 32px
+      background-color: $primary
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        width: 13px
+        height: 13px
+
+    &__link--mobile
+      text-decoration: none
+      color: $light
+    &__dropdown
+      display: flex
+      justify-content: space-between
+      &-arrow
+        width: 12px
+        height: 12px
+        background-color: transparent
+        border: none
+        background-image: url("../img/arrow-down.svg")
+        background-repeat: no-repeat
+        background-size: contain
+        cursor: pointer
+
+  .dropdown-content
+    list-style: none
+    margin: 0
+    padding: 0
+    padding-left: 12px
+    display: none
+    visibility: hidden
+    position: absolute
+    top: -100px
+    transition-property: all
+    transition-duration: 1s
+    &--show
+      display: block
+      top: 0
+      visibility: visible
+      position: static
+    &__item
+      margin-bottom: 19px
+      &:first-child
+        margin-top: 19px
+      &:last-child
+        margin-bottom: 15px
+    &__link
+      text-decoration: none
+      color: $light

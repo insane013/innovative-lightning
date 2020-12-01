@@ -3,7 +3,7 @@
   background: url("../img/header-bg3.png")
   background-repeat: no-repeat
   background-size: cover
-  background-position: top center
+  background-position: center top
   &__container
     position: relative
     padding-bottom: 220px
@@ -16,8 +16,8 @@
       display: flex
     &__content-wrapper
       display: flex
-      justify-content: space-between
       align-items: flex-start
+      justify-content: space-between
       width: 100%
       padding-left: 75px
       padding-top: 75px
@@ -26,7 +26,6 @@
       flex-direction: column
     &__phone
       font-size: 30px
-      margin-bottom: 8px
       text-decoration: none
       color: inherit
     &__email
@@ -57,7 +56,7 @@
         color: $light
         border-bottom: 2px solid $primary
   &-content
-    padding-top: 48px
+    padding-top: 54px
     &__slider
       width: 1140px
       padding-bottom: 16px
@@ -69,38 +68,40 @@
         display: flex
         flex-direction: column
         margin-bottom: 21px
+        margin-right: 132px
       &-text
         &--big
           font-size: 86px
     &__slide
       display: flex
-      align-items: center
+      flex-direction: column
       padding: 0 100px
     &__arrow
       width: 48px
       height: 48px
       background-repeat: no-repeat
       background-position: 50% 50%
+      background-size: 8px 12px
       border: 1px solid $primary
       position: absolute
-      top: 53%
+      top: 50%
       transform: translateY(-50%)
       cursor: pointer
       z-index: 1
       &--prev
-        background-image: url("../img/arrow-right.png")
+        background-image: url("../img/arrow-right.svg")
         right: 20px
       &--next
-        background-image: url("../img/arrow-left.png")
+        background-image: url("../img/arrow-left.svg")
         left: 20px
 
     &__text
       &-wrapper
-        max-width: 560px
-        margin-right: 138px
+        display: flex
+        flex-wrap: wrap
     &__features
       display: flex
-      justify-content: space-between
+      justify-content: flex-start
       font-family: EXO
       font-size: 16px
       margin-bottom: 40px
@@ -108,6 +109,7 @@
         display: flex
         justify-content: space-between
         align-items: center
+        margin-right: 10px
         &::after
           content: ""
           display: flex
@@ -118,12 +120,15 @@
           transform: rotate(45deg)
           box-shadow: 0 0 8px 7px  rgba($primary, 0.5 )
         &:last-child
+          margin-right: 0
           &::after
             display: none
     &__video
       display: flex
       justify-content: start
       align-items: flex-start
+      align-self: flex-end
+      margin-bottom: 10px
       &-ico
         padding: 20px 23px 20px 25px
         width: 64px
@@ -151,6 +156,10 @@
         max-width: 120px
 
 .menu
+  &:btn
+    display: none
+  &--mobile
+    display: none
   &__list
     list-style: none
     padding: 0
@@ -192,3 +201,5 @@
     display: flex
     justify-content: center
     padding-top: 26px
+  &-mobile-wrapper
+    display: none
