@@ -6,9 +6,10 @@ body
   padding: 0
   color: $light
   font-family: T-FLEXA, sans-serif
+  overflow-x: hidden
 
 img
-  max-width: 100%
+  // max-width: 100%
 
 button
   background-color: transparent
@@ -47,3 +48,31 @@ button
   img
     width: 8px
     height: 12px
+
+.tag
+  writing-mode: vertical-rl
+  transform: rotate(180deg)
+  text-align: right
+  font-family: exo
+
+.slider-arrow
+  width: 48px
+  height: 48px
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: 8px 12px
+  border: 1px solid $primary
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  cursor: pointer
+  z-index: 1
+  &--next
+    background-image: url("../img/arrow-right.svg")
+    right: 20px
+  &--prev
+    background-image: url("../img/arrow-left.svg")
+    left: 20px
+
+.first-word-style span
+    background-color: $primary

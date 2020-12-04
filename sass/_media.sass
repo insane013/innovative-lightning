@@ -1,8 +1,3 @@
-@media (max-width: 1500px)
-  .header
-    &__lt
-      left: -25px
-
 @media (max-width: 1200px)
   .container
     max-width: 950px
@@ -21,13 +16,29 @@
     &__item
       margin-right: 30px
       font-size: 14px
+  .our-description
+    &__cock-img
+      left: 78%
+    &__we-want
+      margin-right: 0
+    &__grass-img
+      bottom: 0
+      right: -460px
+    &__lamp-img
+      left: -140px
+  .we-cooperate
+    &__container
+      max-width: 950px
+  .we-cooperate
+    &__slider
+      width: 758px
 
 @media (max-width: 992px)
   .container
     max-width: 750px
   .header
     &__container
-      padding-bottom: 100px
+      padding-bottom: 0
     &-content
       &__slider
         max-width: 750px
@@ -46,6 +57,14 @@
             display: none
       &__text-wrapper
         justify-content: space-between
+      &__our-position
+        background-color: #090909
+        position: relative
+        z-index: 2
+        &-container
+          max-width: 750px
+          margin-top: 0
+          padding-top: 10px
     &-top
       &__container
         border-top: 6px solid $primary
@@ -56,6 +75,8 @@
         align-items: center
       &__contacts
         margin-right: 20px
+    &-main
+      padding-bottom: 136px
   .logo
     &--menu
       width: 34px
@@ -70,11 +91,14 @@
         justify-content: center
         padding-top: 0
   .logo-mobile
-    width: 119px
+    min-width: 119px
     height: 49px
+    flex-shrink: 0
     &-wrapper
       display: flex
       padding-top: 30px
+      width: 119px
+      height: 49px
   .menu
     display: none
     &-btn
@@ -207,3 +231,118 @@
     &__link
       text-decoration: none
       color: $light
+
+  .our-description
+    &__content
+      margin-top: -883px
+      &-container
+        padding-bottom: 50px
+    &__title
+      margin-bottom: 52px
+    &__tag--company
+      display: none
+    &__white
+        clip-path: polygon(60.3% 0, 60.3% 0%, 97% 100%, 0% 100%, 0% 95%);
+    &__cock-img
+      left: 78%
+      top: -70px
+    &__lamp-img
+      top: -72px
+      left: 11%
+    &__grass-img
+      width: 462px
+      height: 315px
+      bottom: 0
+      right: -300px
+    &__we-want
+      margin-top: 330px
+      margin-left: 70px
+      margin-bottom: 54px
+      width: 82%
+    &__we-offer
+      &-text
+        margin-bottom: 65px
+    &__text
+      width: 100%
+  .we-cooperate
+    &__slider
+      width: 558px
+
+@media (max-width: 768px)
+  .container
+    max-width: 730px
+  .menu-btn
+    &--header
+      margin-left: 10px
+      margin-top: 30px
+  .header
+    &-main
+      background-position-x: -300px
+    &-top
+      &__phone
+        font-size: 17px
+      &__email
+        font-size: 9px
+    &-content
+      padding-top: 59px
+      &__container
+        max-width: 680px
+      &__slider
+        max-width: 730px
+        &-title
+          margin-right: 90px
+        &-text
+          font-size: 28px
+          &--big
+            font-size: 55px
+      &__text-wrapper
+        justify-content: start
+      &__video
+        align-self: flex-end
+        margin-bottom: 33px
+      &__features-text
+        margin-right: 26px
+  .logo
+    &-mobile
+      &-wrapper
+        padding-top: 26px
+
+  .our-description
+    &__content
+      margin-top: -883px
+      &-container
+        padding-bottom: 50px
+    &__title
+      margin-bottom: 52px
+    &__container
+      max-width: 680px
+    &__dark
+      margin-left: -27px
+    &__cock-img
+      top: -153px
+      left: 72.1%
+
+    &__item
+      margin-bottom: 29px
+    &__text
+      line-height: normal
+      margin-bottom: 22px
+    &__tag
+      margin-right: 53px
+    &__we-want
+      margin-top: 214px
+    &__we-offer
+      &-text
+        width: 94%
+        margin-bottom: 58px
+
+  .we-cooperate
+    &__slider
+      width: 532px
+
+@media (max-width: 700px)
+  .we-cooperate
+    &__slider
+      width: 98%
+    &__slide
+      margin: 0 auto

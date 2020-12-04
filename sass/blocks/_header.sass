@@ -2,9 +2,14 @@
   position: relative
   &-main
     position: relative
+    background-image: url("../img/header-bg3.png")
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    z-index: 2
   &__container
     position: relative
-    padding-bottom: 220px
+    padding-bottom: 70px
   &__lt
     position: absolute
     bottom: 0
@@ -64,6 +69,7 @@
         border-bottom: 2px solid $primary
   &-content
     padding-top: 54px
+    padding-bottom: 151px
     &__slider
       width: 1140px
       padding-bottom: 16px
@@ -83,24 +89,6 @@
       display: flex
       flex-direction: column
       padding: 0 100px
-    &__arrow
-      width: 48px
-      height: 48px
-      background-repeat: no-repeat
-      background-position: 50% 50%
-      background-size: 8px 12px
-      border: 1px solid $primary
-      position: absolute
-      top: 50%
-      transform: translateY(-50%)
-      cursor: pointer
-      z-index: 1
-      &--prev
-        background-image: url("../img/arrow-right.svg")
-        right: 20px
-      &--next
-        background-image: url("../img/arrow-left.svg")
-        left: 20px
 
     &__text
       &-wrapper
@@ -214,29 +202,47 @@
 .our-description
   background-color: #fff
   &__bg
-    object-fit: cover
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    z-index: 2
+    position: relative
+    height: 762px
   &__dark
     // background-image: url("../img/clip-bg.png")
     // background-repeat: no-repeat
-    // background-position: center
-    width: 100%
+    // background-position-x: center
+    // background-position-y: top
+    // background-size: contain
     min-height: 762px
+    width: 1920px
     padding-top: 48px
-    position: relative
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    background: #090909
+    clip-path: polygon(0 0, 65.4% 0, 100% 0, 100% 100%, 65.4% 0, 0 95%);
+    z-index: 3
+  &__white
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    background-image: none
+    background: #fff
+    width: 1920px
+    clip-path: polygon(65.3% 0, 65.3% 0%, 100% 100%, 0% 100%, 0% 95%)
+    z-index: 2
+    height: 762px
+  &__side
+    background-color: #090909
+    z-index: 1 
+    position: absolute
+    width: 100%
+    height: 762px
   &__container
     display: flex
+    position: relative
+    z-index: 4
   &__tag
-    writing-mode: vertical-rl
-    transform: rotate(180deg)
     margin-right: 80px
-    text-align: right
-    font-family: exo
     color: #222
     z-index: 3
   &__title
@@ -244,6 +250,8 @@
     margin: 0
     margin-bottom: 60px
     z-index: 3
+    &--mobile
+      display: none
   &__list
     list-style: none
     padding: 0
@@ -276,14 +284,21 @@
       z-index: 3
   &__content
     position: relative
-    margin-top: -530px
+    margin-top: -710px
+    // background-image: url(../img/grass.png)
+    // background-repeat: no-repeat
+    // background-position: right bottom
     &-container
       display: flex
       flex-direction: column
+      position: relative
+      margin-top: -70px
+      padding-bottom: 30px
   &__we-want
     margin-left: auto
     margin-right: 80px
     margin-bottom: 25px
+    z-index: 3
   &__text
     width: 472px
     line-height: 167%
@@ -292,14 +307,31 @@
     font-family: exo
     margin: 0
     margin-bottom: 12px
+    position: relative
   &__lamp-img
     position: absolute
     top: -30px
-    left: 23px
-    z-index: 1
+    left: -65px
+    z-index: 2
+  &__cock-img
+    position: absolute
+    top: -103px
+    left: 73.3%
+  &__leaf
+    &-1
+      position: absolute
+      bottom: -35px
+      right: 120px
+    &-2
+      position: absolute
+      bottom: -30px
+      right: 480px
+      z-index: 5
+
   &__we-offer
     margin-right: auto
     display: flex
+    z-index: 3
     &-menu
       display: flex
     &-list
@@ -313,6 +345,15 @@
       margin-bottom: 9px
       &--nd
         color: #333333
+    &-tag
+        &::before
+          content: ""
+          position: absolute
+          width: 1px
+          height: 245px
+          background-color: #ccc
+          left: 50%
+          top: 120px
 
     &-title
       color: $primary
@@ -324,6 +365,6 @@
       margin-bottom: 26px
   &__grass-img
     position: absolute
-    bottom: -40px
-    right: -270px
-    z-index: 1
+    bottom: 0
+    right: -360px
+    z-index: 2

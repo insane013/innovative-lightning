@@ -1,0 +1,78 @@
+.we-produce
+  padding-bottom: 93px
+  &__container
+    max-width: 1400px
+  &__slider
+    width: 100%
+    overflow: hidden
+  &__slide
+    position: relative
+    min-height: 522px
+    max-width: 351px
+    padding: 84px 52px 57px 52px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    background: url("../img/white-bg.png")
+    overflow: hidden
+    &-img
+      position: absolute
+      right: -280px
+      top: 0
+      &--flasher
+        right: 0
+        top: 132px
+      &--cock
+        right: 50%
+        transform: translateX(50%)
+        top: 200px
+    &--alternate
+      // background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 65%)
+      background: url("../img/black-bg.png")
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: left bottom
+      justify-content: space-between
+      padding-top: 59px
+      .we-produce
+        &__title
+          color: #ffffff
+        &__description
+          color: #7f7f7f
+
+  &__title
+    color: #191919
+    margin: 0
+    font-size: 31px
+    font-family: T-FLEXA
+    letter-spacing: normal
+    text-transform: uppercase
+    margin-bottom: 19px
+  &__description
+    color: #4c4c4c
+    font-family: exo
+    font-size: 18px
+    margin: 0
+  &__read-more
+    text-decoration: none
+    color: $primary
+    margin: 0
+    width: 0
+    margin-top: 36px
+    font-family: exo
+    font-size: 16px
+    text-transform: uppercase
+    &::before
+      content: ""
+      position: absolute
+      width: 39px
+      height: 1px
+      background-color: #fff
+      left: 0
+      transform: translateY(8px)
+  &__arrow
+    width: 31px
+    height: 31px
+    box-shadow: 0 0 0 7px  rgba($primary, 0.2 )
+    &--next
+      right: 39px
