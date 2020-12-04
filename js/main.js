@@ -44,7 +44,7 @@ $(document).ready(function () {
     slidesPerView: 4,
 
     navigation: {
-      nextEl: ',we-produce__arrow--next',
+      nextEl: '.we-produce__arrow--next',
       prevEl: '.we-produce__arrow--prev',
     },
 
