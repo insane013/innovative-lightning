@@ -152,6 +152,22 @@ $(document).ready(function () {
 
   })
 
+  var blogSlider = new Swiper('.blog__slider', {
+    speed: 1000,
+    loop: true,
+    // watchOverflow: true,
+    autoHeight: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    navigation: {
+      nextEl: '.blog__arrow--next',
+      prevEl: '.blog__arrow--prev',
+    },
+
+  })
+
   Change();
   $("[data-interact='tab']").on('click', Change);
 
