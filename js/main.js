@@ -49,6 +49,126 @@ $(document).ready(function () {
     },
 
   })
+  var productSpecSlider_1 = new Swiper('.product-spec__slider--spectre', {
+    speed: 1000,
+    loop: true,
+    // watchOverflow: true,
+    autoHeight: true,
+    clickable: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    navigation: {
+      nextEl: '.product-spec__arrow--next--spectre',
+      prevEl: '.product-spec__arrow--prev--spectre',
+    },
+
+    pagination: {
+      el: '.product-spec__pagination--spectre',
+    },
+
+  })
+  var productSpecSlider_2 = new Swiper('.product-spec__slider--lense', {
+    speed: 1000,
+    loop: true,
+    // watchOverflow: true,
+    autoHeight: true,
+    clickable: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    navigation: {
+      nextEl: '.product-spec__arrow--next--lense',
+      prevEl: '.product-spec__arrow--prev--lense',
+    },
+
+    pagination: {
+      el: '.product-spec__pagination--lense',
+    },
+
+  })
+
+  var productSpecSlider_3 = new Swiper('.product-spec__slider--ppfd', {
+    speed: 1000,
+    loop: true,
+    // watchOverflow: true,
+    autoHeight: true,
+    clickable: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    navigation: {
+      nextEl: '.product-spec__arrow--next--ppfd',
+      prevEl: '.product-spec__arrow--prev--ppfd',
+    },
+
+    pagination: {
+      el: '.product-spec__pagination--ppfd',
+    },
+
+  })
+
+  var productSpecSlider_4 = new Swiper('.product-spec__slider--construct', {
+    speed: 1000,
+    loop: true,
+    // watchOverflow: true,
+    autoHeight: true,
+    clickable: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    navigation: {
+      nextEl: '.product-spec__arrow--next--construct',
+      prevEl: '.product-spec__arrow--prev--construct',
+    },
+
+    pagination: {
+      el: '.product-spec__pagination--construct',
+    },
+
+  })
+  var productSpecSlider_5 = new Swiper('.product-spec__slider--row', {
+    speed: 1000,
+    loop: true,
+    // watchOverflow: true,
+    autoHeight: true,
+    clickable: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    navigation: {
+      nextEl: '.product-spec__arrow--next--row',
+      prevEl: '.product-spec__arrow--prev--row',
+    },
+
+    pagination: {
+      el: '.product-spec__pagination--row',
+    },
+
+  })
+
+  Change();
+  $("[data-interact='tab']").on('click', Change);
+
+  function Change() {
+    $("[data-interact='tab']").each(function () {
+      // console.log($("[data-interact='tab']"));
+      if ($(this).is(':checked')) {
+        // console.log("checked");
+        $($(this).attr("value")).addClass("product-spec--active");
+      } else {        
+        $($(this).attr("value")).removeClass("product-spec--active");
+      }
+    });
+    if ($("#tab-2").is(':checked')) {
+      // console.log('2 checked');
+    }
+  }
 
   $("[data-interact='dropdown']").on('click', function(e){
     e.preventDefault,

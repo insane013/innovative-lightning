@@ -1,0 +1,98 @@
+.product-spec
+  padding-top: 40px
+  &--active
+    display: block
+  &__grid
+    position: relative
+    padding: 12px 32px 25px 35px
+    display: grid
+    grid-template-columns: 1fr 404px
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+    box-shadow: 0 0 7px 9px rgba(150,150,150,0.1)
+  &__container
+    &--bottom
+      padding: 35px 0 37px 0
+      display: flex
+      justify-content: center
+  &__catalog-link
+    text-decoration: none
+    color: $primary
+    border-bottom: 3px solid $primary
+    font-family: exo
+    font-size: 16px
+    letter-spacing: 1px
+  &__tabs
+    display: flex
+    justify-content: flex-start
+    border-bottom: 1px solid #cccccc
+  &__tab
+    display: none
+    &:checked + .product-spec__label
+      border-top: 4px solid $primary
+      .product-spec__tab-title
+        color: #333333
+    &-title
+      color: $primary
+      font-family: exo
+      font-size: 16px
+      text-transform: uppercase
+      font-weight: 700
+      margin: 0
+  &__label
+    text-align: left
+    cursor: pointer
+    position: relative
+    padding-top: 26px
+    margin-right: 39px
+    border-top: 4px solid transparent
+    &:last-child
+      margin-right: 0
+
+  &__slider
+    overflow: hidden
+    &-wrapper
+      position: relative
+      grid-row: span 2
+  &__arrow
+    width: 31px
+    height: 31px
+    &--prev
+      left: -15px
+    &--next
+      right: -12px
+
+  &__pagination
+    transform: translateY(-50%)
+    height: 10px
+    display: flex
+    justify-content: center
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 0
+    z-index: 2
+    .swiper-pagination-bullet
+      width: 10px
+      height: 10px
+      background-color: #090909
+      opacity: 1
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+      &-active
+        background-color: $primary
+
+  &__title
+    font-family: Exo
+    font-size: 24px
+    font-weight: 400
+    color: $primary
+    margin: 0
+    margin-bottom: 11px
+  &__text
+    font-family: exo
+    color: #333333
+    font-size: 18px
+    line-height: 27px
+    margin: 0
